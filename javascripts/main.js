@@ -49,6 +49,45 @@ $(document).ready(function(){
     })
   }
 
+  $("#add-music-view").click(function() {
+    $(".col-xs-4").hide("slow");
+    $(".row").hide("slow");
+    $(".col-xs-4").show("slow");
+    })
+  $("#list-music-view").click(function() {
+    $(".row").hide("slow");
+    $(".col-xs-4").hide("slow");
+    $(".row").show("slow");
+  })
+})
+
+
+
+
+
+// //This hides both view and add forms and then shows the viewForm
+// function showViewForm() {
+//   mainAddForm.classList.add("hidden");
+//   mainViewForm.classList.add("hidden");
+
+//   mainViewForm.classList.remove("hidden");
+// }
+
+// //This hides both view and add forms and then shows the addForm
+// function showAddForm() {
+//   mainAddForm.classList.add("hidden");
+//   mainViewForm.classList.add("hidden");
+
+//   mainAddForm.classList.remove("hidden");
+// }
+
+
+
+
+
+
+
+
   $("#addNew").click(function() {
     let newSong = {
       "name": $("#user-song").val(),
@@ -65,6 +104,5 @@ $(document).ready(function(){
       songsDisplayAjax();
 
     })
-  })
-});
+  });
 

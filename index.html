@@ -28,8 +28,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"> View Music</a></li>
-          <li><a href="#"> Add Music</a></li>
+          <li><a href="#" id="list-music-view"> View Music</a></li>
+          <li><a href="#" id="add-music-view"> Add Music</a></li>
 
         </ul>
       </div>
@@ -80,8 +80,8 @@
     </div>
   </div>
 
-
-  <div id="container4-fluid" class="col-xs-3">
+  <div class="col-xs-4" hidden></div>
+  <div id="container4" class="col-xs-4" hidden>
    <div class="form-group">
     <label for="user-song">Song Name</label>
     <input type="text" class="form-control" id="user-song">
@@ -94,6 +94,7 @@
   </div>
   <input type="button" id="addNew" value="add songs"></input>
 </div>
+<div class="col-xs-4" hidden></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
