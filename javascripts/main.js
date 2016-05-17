@@ -25,7 +25,6 @@ $(document).ready(function(){
 
   $("#list-view").on("click", ".delete", ".edit", function(){
     deleteAjax($(".delete").attr("id"))
-    editAjax($(".edit").attr("data-edit-id"))
   })
 
   function deleteAjax (cow) {
@@ -39,15 +38,15 @@ $(document).ready(function(){
     })
   }
 
-  function editAjax () {
-    $.ajax({
-      url: "https://musichistorymusic.firebaseio.com/songs/.json",
-      type: "PUT"
-    }).done(function() {
-      $("#list-view")
-      songsDisplayAjax();
-    })
-  }
+  // function editAjax () {
+  //   $.ajax({
+  //     url: "https://musichistorymusic.firebaseio.com/songs/.json",
+  //     type: "PUT"
+  //   }).done(function() {
+  //     $("#list-view")
+  //     songsDisplayAjax();
+  //   })
+  
 
   $("#add-music-view").click(function() {
     $(".col-xs-4").hide("slow");
@@ -59,33 +58,6 @@ $(document).ready(function(){
     $(".col-xs-4").hide("slow");
     $(".row").show("slow");
   })
-})
-
-
-
-
-
-// //This hides both view and add forms and then shows the viewForm
-// function showViewForm() {
-//   mainAddForm.classList.add("hidden");
-//   mainViewForm.classList.add("hidden");
-
-//   mainViewForm.classList.remove("hidden");
-// }
-
-// //This hides both view and add forms and then shows the addForm
-// function showAddForm() {
-//   mainAddForm.classList.add("hidden");
-//   mainViewForm.classList.add("hidden");
-
-//   mainAddForm.classList.remove("hidden");
-// }
-
-
-
-
-
-
 
 
   $("#addNew").click(function() {
@@ -105,4 +77,5 @@ $(document).ready(function(){
 
     })
   });
+});
 
