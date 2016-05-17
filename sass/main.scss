@@ -1,9 +1,15 @@
 $my-color: white;
 
+@import "color";
+
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 		-ms-border-radius: $radius;
 			border-radius: $radius;
+}
+
+.navbar-default {
+	background-color: $nav-color;
 }
 
 body {
@@ -11,6 +17,7 @@ body {
 	max-width: 900px;
 	padding: 10px;
 }
+
 
 .hidden {
 	visiblity: hidden;
@@ -20,12 +27,8 @@ body {
 	visibility: visible;
 }
 
-@import "color";
 
 
-.navbar-default {
-	background-color: $nav-color;
-}
 
 .demo-content{
         font-size: 16px;
@@ -46,5 +49,3 @@ body {
 	float: right;
 }
 
-
-.pagination-centered{text-align:center;}

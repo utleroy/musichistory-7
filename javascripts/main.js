@@ -47,26 +47,28 @@ $(document).ready(function(){
   //     songsDisplayAjax();
   //   })
   
-
+//************ hides list view and shows add view on click **********//
   $("#add-music-view").click(function() {
     $(".col-xs-4").hide("slow");
     $(".row").hide("slow");
     $(".col-xs-4").show("slow");
     })
+
+  //********** hides add view and shows list view on click **********//
   $("#list-music-view").click(function() {
     $(".row").hide("slow");
     $(".col-xs-4").hide("slow");
     $(".row").show("slow");
   })
 
-
+  //*********** adds music per user input on click of submit button ************//
   $("#addNew").click(function() {
     let newSong = {
       "name": $("#user-song").val(),
       "artist": $("#user-artist").val(),
       "album": $("#user-album").val(),
     }
-
+  //************ ajax call to add music from user submit to firebase ************//
     $.ajax({
       url: "https://musichistorymusic.firebaseio.com/songs.json",
       type: "POST",
