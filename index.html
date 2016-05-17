@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Music History 7</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MUSIC HISTORY 7</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"> View Music</a></li>
+          <li><a href="#"> Add Music</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">       
+  </div>
+  <div class="row">
+    <div class="col-xs-2">
+      <div class="demo-content" id="left">
+        <label for="Song Length:">Song Length:</label>
+
+        <div>
+          <input type="range" placeholder="Song Length">
+        </div>      
+
+        <p>Artist:</p>
+        <select name="Artist">
+          <option value="Halfway to Hazard">Halfway to Hazard</option>
+          <option value="ZZ">ZZ Top</option>
+          <option value="Super">Super Tramp</option>
+          <option value="Pink">Pink Floyd</option>
+        </select>
+
+        <p> Album: </p>
+        <select name="Album">
+          <option value="American Outlaw">American Outlaw</option>
+          <option value="Eliminator">Eliminator</option>
+          <option value="Breakfast">Breakfast in America</option>
+          <option value="Wall">The Wall</option>
+        </select>
+
+        <div><label for="Genre">Genre:</label></div>
+
+        <div><input type="checkbox">Rock <input type="checkbox">Classical</div>
+        <div><input type="checkbox">Pop   <input type="checkbox">Jazz</div>
+        <div><input type="checkbox">Blues<input type="checkbox">Hip Hop</div>
+        <div><button type="Submit" class="filter">Filter</button></div>
+      </div>
+    </div>
+
+    <div class="col-xs-10">
+      <div class="demo-content bg-alt" id="right">
+        <div id="list-view">   
+        </div>          
+      </div>
+    </div>
+  </div>
+
+
+  <div id="container4-fluid" class="col-xs-3">
+   <div class="form-group">
+    <label for="user-song">Song Name</label>
+    <input type="text" class="form-control" id="user-song">
+
+    <label for="user-artist">Artist</label>
+    <input type="text" class="form-control" id="user-artist">
+
+    <label for="user-album">Album</label>
+    <input type="text" class="form-control" id="user-album">
+  </div>
+  <input type="button" id="addNew" value="add songs"></input>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="javascripts/main.js"></script>
+
+</body>
+</html>

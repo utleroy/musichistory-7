@@ -1,0 +1,41 @@
+$my-color: white;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+		-ms-border-radius: $radius;
+			border-radius: $radius;
+}
+
+
+
+body {
+	background-color: $my-color;
+	max-width: 900px;
+	padding: 10px;
+}
+
+@import "color";
+
+
+.navbar-default {
+	background-color: $nav-color;
+}
+
+.demo-content{
+        font-size: 16px;
+        padding: 15px;
+        min-height: 400px;
+        margin-bottom: 10px;
+    }
+
+#left {
+    background: lightblue;
+	min-width: 300px;
+}
+
+#right {
+    background: lightgrey;
+	max-width: 800px;
+	min-width: 575px;
+	float: right;
+}

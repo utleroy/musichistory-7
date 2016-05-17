@@ -1,0 +1,19 @@
+{
+  "songs":[
+  {
+    "name": "American Outlaw",
+    "artist": "Halfway to Hazard",
+    "album" : " | American Outlaw"
+  },
+  {
+    "name": "Heaven on Down The Highway",
+    "artist": "Halfway to Hazard",
+    "album" : " | American Outlaw"
+  },
+  {
+    "name": "You're Gonna Love it Round Here",
+    "artist": "Halfway to Hazard",
+    "album" : " | American Outlaw"
+  }
+  ]
+}
